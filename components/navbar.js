@@ -17,6 +17,7 @@ import {
 
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -87,6 +88,7 @@ const Navbar = ({ path }) => {
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
+          <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
