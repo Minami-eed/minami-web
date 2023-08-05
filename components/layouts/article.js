@@ -21,7 +21,7 @@ const Article = ({ children, title }) => {
       <>
         {title && (
           <Head>
-            <title>{title} - Minami</title>
+            <title>{title} / Minami EED</title>
           </Head>
         )}
         {children}

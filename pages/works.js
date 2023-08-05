@@ -5,9 +5,9 @@ import { worksData } from '../components/works-data'
 import Layout from '../components/layouts/article'
 const Works = () => {
   return (
-    <Layout>
+    <Layout title="Works">
       <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={20} mb={4} mt={5}>
           My Works
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
