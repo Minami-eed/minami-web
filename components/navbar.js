@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -35,6 +36,10 @@ const LinkItem = ({ href, path, children }) => {
     </Link>
   )
 }
+
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
   const { path } = props
@@ -101,13 +106,13 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={Link} href="/">
+                <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={Link} href="/works">
+                <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
-                <MenuItem as={Link} href="#">
+                <MenuItem as={MenuLink} href="#">
                   Posts
                 </MenuItem>
                 <MenuItem
