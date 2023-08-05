@@ -34,7 +34,7 @@ const Page = () => {
         </Box>
 
         <Box display={{ md: 'flex' }}>
-          <Box>
+          <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Edson Ever David
             </Heading>
@@ -60,6 +60,7 @@ const Page = () => {
               display="inline-block"
               borderRadius="full"
               overflow="hidden"
+              mb={7}
             >
               <Image
                 src="/images/minami.png"
