@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
@@ -159,6 +159,7 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
                   @Minami-eed
+                  <ExternalLinkIcon mx="2px" />
                 </Button>
               </Link>
             </ListItem>
@@ -171,6 +172,7 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
                   @Minami_eed
+                  <ExternalLinkIcon mx="2px" />
                 </Button>
               </Link>
             </ListItem>
@@ -186,6 +188,7 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoInstagram} />}
                 >
                   @Minami.eed
+                  <ExternalLinkIcon mx="2px" />
                 </Button>
               </Link>
             </ListItem>

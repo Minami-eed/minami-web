@@ -19,6 +19,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -80,6 +81,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem href="#" path={path}>
             Posts
+            <ExternalLinkIcon mx="2px" />
           </LinkItem>
           <LinkItem
             target="_blank"
