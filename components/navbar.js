@@ -36,7 +36,8 @@ const LinkItem = ({ href, path, children }) => {
   )
 }
 
-const Navbar = ({ path }) => {
+const Navbar = props => {
+  const { path } = props
   return (
     <Box
       position="fixed"
@@ -45,6 +46,7 @@ const Navbar = ({ path }) => {
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
+      {...props}
     >
       <Container
         display="flex"
@@ -75,22 +77,23 @@ const Navbar = ({ path }) => {
             Posts
           </LinkItem>
           <LinkItem
+            target="_blank"
             href="https://github.com/minami-eed/minami-web"
             path={path}
-            display="inline-flex"
-            alignItems="center"
             style={{ gap: 4 }}
             pl={2}
-            target="_blank"
           >
-            <IoLogoGithub />
-            Source
+            <Flex align="center">
+              <IoLogoGithub />
+              <Box ml={2}>Source</Box>
+            </Flex>
           </LinkItem>
         </Stack>
+
         <Box flex={1} align="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
+            <Menu>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
