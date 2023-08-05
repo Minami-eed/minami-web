@@ -1,5 +1,7 @@
 # Minami's Homepage
 
+[https://www.minami.bio/](https://www.minami.bio/)
+
 ## Stack
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
