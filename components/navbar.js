@@ -79,12 +79,7 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="#" path={path}>
-            Posts
-            <ExternalLinkIcon mx="2px" />
-          </LinkItem>
           <LinkItem
-            target="_blank"
             href="https://github.com/minami-eed/minami-web"
             path={path}
             style={{ gap: 4 }}
@@ -113,9 +108,6 @@ const Navbar = props => {
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
                   Works
-                </MenuItem>
-                <MenuItem as={MenuLink} href="#">
-                  Posts
                 </MenuItem>
                 <MenuItem
                   as={Link}
