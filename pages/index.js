@@ -63,7 +63,7 @@ const Page = () => {
               mb={7}
             >
               <Image
-                src="/images/minami.png"
+                src="/images/minami.jpg"
                 alt="Minami Profile image"
                 borderRadius="full"
                 width="100"
