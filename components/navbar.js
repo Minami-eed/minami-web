@@ -20,7 +20,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
   return (
@@ -31,6 +31,8 @@ const LinkItem = ({ href, path, children }) => {
       p={2}
       bg={active ? '#c4acec' : undefined}
       color={active ? '#202023' : inactiveColor}
+      target={target}
+      {...props}
     >
       {children}
     </Link>
@@ -82,13 +84,13 @@ const Navbar = props => {
             target="_blank"
             href="https://github.com/minami-eed/minami-web"
             path={path}
+            display="inline-flex"
+            alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            <Flex align="center">
-              <IoLogoGithub />
-              <Box ml={2}>Source</Box>
-            </Flex>
+            <IoLogoGithub />
+            Source
           </LinkItem>
         </Stack>
 
