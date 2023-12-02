@@ -19,7 +19,6 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -80,6 +79,7 @@ const Navbar = props => {
             Works
           </LinkItem>
           <LinkItem
+            target="_blank"
             href="https://github.com/minami-eed/minami-web"
             path={path}
             style={{ gap: 4 }}
