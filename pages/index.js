@@ -141,8 +141,7 @@ const Page = () => {
           </Heading>
 
           <Paragraph>
-            Research, Music, Playing Piano, Video Games, Photography, Machine
-            Learning.
+            Research, Music, Playing Piano, Video Games and Photography.
           </Paragraph>
         </Section>
 
