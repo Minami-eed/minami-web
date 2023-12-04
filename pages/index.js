@@ -78,27 +78,27 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            I am a passionate and skilled developer specialized in software
-            development with experience in creating web and mobile applications.
+            I am a passionate programmer in software development with experience
+            in creating web and mobile applications.
             <br></br>
-            <br></br>I possess knowledge of programming languages such as HTML,
-            CSS, JavaScript, Java, Kotlin, and am familiar with various
-            development technologies including databases, frameworks, and
-            version control tools. Additionally, I have experience in user
+            <br></br>I have knowledge in programming languages such as HTML,
+            CSS, JavaScript, Java, Kotlin, ASP.NET, Swift and am familiar with
+            various development technologies including databases, frameworks,
+            and version control tools. Additionally, I have experience in user
             interface design, user experience optimization, and the use of
-            ChatGPT.<br></br>
+            artificial intelligence.<br></br>
             <br></br>
-            Having worked on software development projects in diverse
+            Having collaborated on software development projects in diverse
             organizations, I have demonstrated exceptional ability to work
-            collaboratively and efficiently solve complex problems. I am an
-            effective communicator and take pride in my ability to translate
-            user requirements into effective technological solutions.<br></br>
+            collaboratively and solve complex problems. I am an effective
+            communicator and take pride in my ability to translate user
+            requirements into technological solutions.<br></br>
             <br></br>
-            Furthermore, I am committed to continuous education and am always
-            seeking to learn new skills and technologies to enhance my developer
-            skills. I am excited about the opportunity to further develop my
-            career as a developer and contribute my experience and skills to a
-            dynamic and creative team. Furthermore, if you would like to view my
+            Furthermore, I am committed to continuous education and and I am
+            always constantly learning new skills and technologies to enhance my
+            developer skills. I am excited about the opportunity to further
+            develop my career as a developer and contribute my experience and
+            skills to a dynamic and creative team. If you would like to view my
             Works, you may refer to my portfolio below.<br></br>
             <br></br>
           </Paragraph>
@@ -131,7 +131,7 @@ const Page = () => {
 
           <BioSection>
             <BioYear>2023 to present</BioYear>
-            Working as a freelancer.
+            Machine Learning.
           </BioSection>
         </Section>
 
