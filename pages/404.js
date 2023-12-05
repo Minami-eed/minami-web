@@ -17,13 +17,11 @@ const NotFound = () => {
         <Text>The page you&apos;re looking for was not found.</Text>
         <Divider my={6} />
         <Box my={6} align="center">
-          <Button
-            as={NextLink}
-            href="/"
-            style={{ backgroundColor: '#805ad5', color: '#FFFFFF' }}
-          >
-            Return to home
-          </Button>
+          <NextLink href="/" passHref>
+            <Button style={{ backgroundColor: '#805ad5', color: '#FFFFFF' }}>
+              Return to home
+            </Button>
+          </NextLink>
         </Box>
       </Container>
     </Layout>

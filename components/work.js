@@ -4,12 +4,15 @@ import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const TitleWork = ({ children }) => (
-  <Box display="flex" alignItems="center" mb={3} mt={4}>
-    <Link as={NextLink} href="/works" fontSize={16} mr={2}>
-      Works
-    </Link>
-    <ChevronRightIcon boxSize={4} />
-    <Heading as="h3" fontSize={20} mb={0} ml={2}>
+  <Box>
+    <NextLink href="/works" passHref>
+      <Link>Works</Link>
+    </NextLink>
+    <span>
+      {' '}
+      <ChevronRightIcon boxSize={4} />
+    </span>
+    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
       {children}
     </Heading>
   </Box>
