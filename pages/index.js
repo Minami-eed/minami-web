@@ -33,6 +33,7 @@ const Page = () => {
           mb={6}
           mt={3}
           align="center"
+          css={{ backdropFilter: 'blur(10px)' }}
         >
           Hello, I&apos;m a Developer based in Peru!
         </Box>
