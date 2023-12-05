@@ -8,7 +8,7 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  Icon
+  chakra
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -17,6 +17,10 @@ import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'alt', 'src'].includes(prop)
+})
 
 const Page = () => {
   return (
@@ -62,7 +66,7 @@ const Page = () => {
               overflow="hidden"
               mb={7}
             >
-              <Image
+              <ProfileImage
                 src="/images/minami.jpg"
                 alt="Minami Profile image"
                 borderRadius="full"
@@ -155,7 +159,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   style={{ color: '#805ad5' }}
-                  leftIcon={<Icon as={IoLogoGithub} />}
+                  leftIcon={<IoLogoGithub />}
                 >
                   @Minami-eed
                   <ExternalLinkIcon mx="2px" />
@@ -168,7 +172,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   style={{ color: '#805ad5' }}
-                  leftIcon={<Icon as={IoLogoTwitter} />}
+                  leftIcon={<IoLogoTwitter />}
                 >
                   @Minami_eed
                   <ExternalLinkIcon mx="2px" />
@@ -184,7 +188,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   style={{ color: '#805ad5' }}
-                  leftIcon={<Icon as={IoLogoInstagram} />}
+                  leftIcon={<IoLogoInstagram />}
                 >
                   @Minami.eed
                   <ExternalLinkIcon mx="2px" />
