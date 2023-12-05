@@ -108,7 +108,7 @@ const Page = () => {
             <br></br>
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works" passHref>
+            <NextLink href="/works">
               <Button
                 rightIcon={<ChevronRightIcon />}
                 style={{ backgroundColor: '#805ad5', color: '#FFFFFF' }}
